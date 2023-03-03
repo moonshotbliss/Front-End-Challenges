@@ -1,0 +1,199 @@
+body{
+    background: url("images/pattern-background-desktop.svg") no-repeat ;
+    background-size:cover;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+ 
+}
+.order-panel{
+    
+    width:450px;
+    height:650px ;
+    background-color: white;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(62, 47, 226, 0.11);
+}
+
+
+.order-panel img{
+    display: block;
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.order-panel h1{
+    color: hsl(223, 47%, 23%);
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+.order-panel p{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-weight: 500;
+    
+}
+.plan{
+    width: 365px;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
+    margin-left: 10%;
+    border-radius: 10px;
+    
+    display: flex;
+    
+}
+.plan-annual{
+    flex-basis: 190px ;
+    justify-content: center;
+}
+.plan-annual h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 25px 0 0 0;
+    position: absolute;
+   
+
+}
+.plan-annual p{
+    padding: 35px 0 0 5px;
+    position: absolute;
+    
+}
+.plan-image{
+    flex-basis: 80px;
+    margin-left: 10px;
+    max-width: 50%;
+    display: flex;
+    
+}
+.plan-image img{
+    position: absolute;
+    margin: 25px 0 0 15px;
+}
+.plan-change{
+    flex-basis: 100px;
+    display: flex;
+    padding: 15px 0 0 10px;
+    font-weight: 700;
+    color: black;
+    font-size: .8rem;
+    
+    text-decoration: underline;
+
+}
+.plan-change:hover{
+    opacity: 0.8;
+    text-decoration: none;
+    color:  hsl(245, 75%, 52%);
+
+}
+.plan-change a{
+    text-decoration: none;
+    margin: 23px 0 0 15px;
+    font-weight: 900;
+    font-size: 15px;
+}
+.btn-payment{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 365px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    font-weight: 800;
+}
+.btn-payment:hover{
+    opacity: .8;
+}
+.btn-cancel{
+    background-color: transparent;
+    border: none;
+    width: 365px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10%;
+    cursor: pointer;
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+    opacity: 0.8;
+    
+}
+.btn-cancel:hover{
+    font-weight: 800;
+    opacity: 1;
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: 
+    center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 450px){
+
+    body{
+        background: url("images/pattern-background-mobile.svg") no-repeat ;
+        background-size:cover;
+        background-color: hsl(225, 100%, 94%);
+        font-family: 'Red Hat Display', sans-serif;
+     
+    }
+    .order-panel{
+        width:350px;
+        height:600px ;
+       
+    }
+        
+    .plan{
+        width: 310px;
+        height: 100px;
+        background-color: hsl(225, 100%, 98%);
+        margin-left: 5%;
+        border-radius: 10px;
+        display: flex;    
+    }
+    .plan-annual h2{
+        padding: 25px 0 0 10px;
+    }
+    .plan-annual p{
+        padding: 35px 0 0 10px;
+
+    }
+    .btn-payment{
+        width: 310px;
+        margin-left: 5%;
+    }
+    .btn-cancel{
+        width: 300px;
+        margin-left: 5%;
+        
+    }
+
+    
+
+
+
+
+
+}
